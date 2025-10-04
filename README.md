@@ -1,3 +1,7 @@
+
+<img width="410" height="860" alt="Снимок экрана 2025-10-04 в 17 18 30" src="https://github.com/user-attachments/assets/4c65b16b-acfa-443e-93d5-958490365e0f" />
+<img width="387" height="837" alt="Снимок экрана 2025-10-04 в 17 19 00" src="https://github.com/user-attachments/assets/e7bc8f64-7a75-441d-aa28-4e5e34630824" />
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
