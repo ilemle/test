@@ -4,7 +4,7 @@ export type TNavigationTypes=THomeStackParamList
 
 export type THomeStackParamList = {
   FootballTeamListScreen: undefined;
-  FootballDetailScreen: undefined;
+  FootballDetailScreen: { id: number };
 };
 
 

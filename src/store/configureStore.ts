@@ -1,6 +1,7 @@
 
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { footballTeamsReducer } from './footballTeams/reducer';
+import { footballTeamDetailReducer } from './footballTeamDetail/reducer';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { persistReducer, persistStore } from 'redux-persist';
 
@@ -8,6 +9,7 @@ import { persistReducer, persistStore } from 'redux-persist';
 
 const rootReducer = combineReducers({
   footballTeams: footballTeamsReducer,
+  footballTeamDetail: footballTeamDetailReducer,
 })
 
 const persistConfig = {
