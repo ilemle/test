@@ -4,13 +4,21 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import { Provider } from 'react-redux';
+import { persistor, store } from '@store';
+import { PersistGate } from 'redux-persist/integration/react';
+
 function App() {
 
   return (
-    <SafeAreaProvider>
-      <StatusBar />
-      <AppContent />
-    </SafeAreaProvider>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+      <SafeAreaProvider>
+        <StatusBar />
+        <AppContent />
+      </SafeAreaProvider>
+      </PersistGate>
+    </Provider>
   );
 }
 
