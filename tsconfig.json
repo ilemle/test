@@ -6,6 +6,7 @@
     "paths": {
       "@navigations": ["./src/navigations"],
       "@screens": ["./src/screens"],
+      "@api": ["./src/api"],
     }
   }
 
