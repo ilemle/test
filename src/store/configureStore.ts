@@ -1,4 +1,5 @@
-import { combineReducers, configureStore, createStore } from '@reduxjs/toolkit';
+
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { footballTeamsReducer } from './footballTeams/reducer';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { persistReducer, persistStore } from 'redux-persist';

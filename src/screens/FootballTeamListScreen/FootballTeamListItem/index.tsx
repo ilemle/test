@@ -4,13 +4,15 @@ interface IFootballTeamListItem {
     logoUrl: string,
     name: string,
     onPress: () => void
+    index:number
 }
 
-export const FootballTeamListItem = ({ logoUrl, name, onPress }: IFootballTeamListItem) => {
+export const FootballTeamListItem = ({ logoUrl, name, onPress,index }: IFootballTeamListItem) => {
 
 
     return (
         <TouchableOpacity style={styles.container} onPress={onPress}>
+            <Text>{index+1}</Text>
             <Image style={styles.image} source={{ uri: logoUrl }} />
             <Text>{name}</Text>
         </TouchableOpacity>
@@ -26,6 +28,6 @@ const styles =  StyleSheet.create({
     image:{
         height:30,
         width:30,
-        marginRight:10,
+        marginHorizontal:10,
     }
 })
